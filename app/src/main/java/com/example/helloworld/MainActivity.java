@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    // This is a comment here.
+
     boolean isPlayer1turn = true;
     boolean filled11 = false;
     boolean filled12 = false;

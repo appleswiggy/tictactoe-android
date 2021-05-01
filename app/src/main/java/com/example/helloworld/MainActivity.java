@@ -5,6 +5,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void setDefault() {
         TextView whoseTurn = findViewById(R.id.turnTextView);
+        Button playAgainButton = findViewById(R.id.button);
         whoseTurn.setText("Turn: Player 1 (Circle)");
 
         isPlayer1turn = true;
@@ -102,12 +104,15 @@ public class MainActivity extends AppCompatActivity {
         circle.animate().alpha(0).setDuration(100);
         cross.animate().alpha(0).setDuration(100);
 
+        playAgainButton.animate().alpha(0).setDuration(100);
+
     }
 
     @SuppressLint("SetTextI18n")
     public void checkWinner() {
 
         TextView whoseTurn = findViewById(R.id.turnTextView);
+        Button playAgainButton = findViewById(R.id.button);
 
         int[] cross = {1, 1, 1};
         int[] circle = {0, 0, 0};
@@ -141,17 +146,20 @@ public class MainActivity extends AppCompatActivity {
             if (count == 3) {
                 whoseTurn.setText("Player 2 Won, congrats :)");
                 someoneWon = true;
+                playAgainButton.animate().alpha(1).setDuration(300);
                 break;
             }
             if (count2 == 3) {
                 whoseTurn.setText("Player 1 Won, congrats :)");
                 someoneWon = true;
+                playAgainButton.animate().alpha(1).setDuration(300);
                 break;
             }
         }
         if (!someoneWon && allFilled()) {
             whoseTurn.setText("Its a tie :|");
             someoneWon = true;
+            playAgainButton.animate().alpha(1).setDuration(300);
         }
     }
 

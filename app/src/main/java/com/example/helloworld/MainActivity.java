@@ -1,6 +1,7 @@
 package com.example.helloworld;
 
 import android.annotation.SuppressLint;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,37 +12,96 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    // This is a comment here.
+    boolean isPlayer1turn;
+    boolean filled11;
+    boolean filled12;
+    boolean filled13;
+    boolean filled21;
+    boolean filled22;
+    boolean filled23;
+    boolean filled31;
+    boolean filled32;
+    boolean filled33;
 
-    boolean isPlayer1turn = true;
-    boolean filled11 = false;
-    boolean filled12 = false;
-    boolean filled13 = false;
-    boolean filled21 = false;
-    boolean filled22 = false;
-    boolean filled23 = false;
-    boolean filled31 = false;
-    boolean filled32 = false;
-    boolean filled33 = false;
-
-    boolean someoneWon = false;
+    boolean someoneWon;
 
     int[][] arr = {{-1, -1, -1}, {-1, -1, -1}, {-1, -1, -1}};
 
     public boolean allFilled() {
-        if (filled11&&filled12&&filled13&&filled21&&filled22&&filled23&&filled31&&filled32&&filled33) {
-            return true;
-        } else {
-            return false;
-        }
+        return filled11 && filled12 && filled13 && filled21 && filled22 && filled23 && filled31 && filled32 && filled33;
     }
 
-    public void printArray() {
+    @SuppressLint("SetTextI18n")
+    public void setDefault() {
+        TextView whoseTurn = findViewById(R.id.turnTextView);
+        whoseTurn.setText("Turn: Player 1 (Circle)");
+
+        isPlayer1turn = true;
+
+        filled11 = false;
+        filled12 = false;
+        filled13 = false;
+        filled21 = false;
+        filled22 = false;
+        filled23 = false;
+        filled31 = false;
+        filled32 = false;
+        filled33 = false;
+
+        someoneWon = false;
+
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 3; ++j) {
-                System.out.println(arr[i][j]);
+                arr[i][j] = -1;
             }
         }
+
+        ImageView circle, cross;
+        circle = findViewById(R.id.circle11);
+        cross = findViewById(R.id.cross11);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
+        circle = findViewById(R.id.circle12);
+        cross = findViewById(R.id.cross12);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
+        circle = findViewById(R.id.circle13);
+        cross = findViewById(R.id.cross13);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
+        circle = findViewById(R.id.circle21);
+        cross = findViewById(R.id.cross21);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
+        circle = findViewById(R.id.circle22);
+        cross = findViewById(R.id.cross22);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
+        circle = findViewById(R.id.circle23);
+        cross = findViewById(R.id.cross23);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
+        circle = findViewById(R.id.circle31);
+        cross = findViewById(R.id.cross31);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
+        circle = findViewById(R.id.circle32);
+        cross = findViewById(R.id.cross32);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
+        circle = findViewById(R.id.circle33);
+        cross = findViewById(R.id.cross33);
+        circle.animate().alpha(0).setDuration(100);
+        cross.animate().alpha(0).setDuration(100);
+
     }
 
     @SuppressLint("SetTextI18n")
@@ -89,9 +149,16 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
         }
-        if (!someoneWon) {
-            printArray();
+        if (!someoneWon && allFilled()) {
+            whoseTurn.setText("Its a tie :|");
+            someoneWon = true;
         }
+    }
+
+    public void playAgain(View view) {
+        Log.i("info", "button pressed yess");
+        setDefault();
+
     }
 
     @SuppressLint("SetTextI18n")
@@ -101,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView whoseTurn = findViewById(R.id.turnTextView);
         whoseTurn.setText("Turn: Player 1 (Circle)");
+        setDefault();
     }
 
     @SuppressLint("SetTextI18n")

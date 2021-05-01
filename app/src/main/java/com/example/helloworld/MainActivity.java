@@ -65,13 +65,25 @@ public class MainActivity extends AppCompatActivity {
 
         int[][] check = {arrRow1, arrRow2, arrRow3, arrCol1, arrCol2, arrCol3, arrDiag1, arrDiag2};
 
+        int count, count2;
         for(int i = 0; i < 8; ++i) {
-            if (check[i] == cross) {
+            count = 0; count2 = 0;
+            for (int j = 0; j < 3; ++j) {
+                if (cross[j] == check[i][j]) {
+                    count += 1;
+                }
+            }
+            for (int j = 0; j < 3; ++j) {
+                if (circle[j] == check[i][j]) {
+                    count2 += 1;
+                }
+            }
+            if (count == 3) {
                 whoseTurn.setText("Player 2 Won, congrats :)");
                 someoneWon = true;
                 break;
             }
-            else if (check[i] == circle) {
+            if (count2 == 3) {
                 whoseTurn.setText("Player 1 Won, congrats :)");
                 someoneWon = true;
                 break;
@@ -147,8 +159,8 @@ public class MainActivity extends AppCompatActivity {
         Log.i("info", "click13");
         TextView whoseTurn = findViewById(R.id.turnTextView);
 
-        if (!filled13) {
-            if (isPlayer1turn && !someoneWon) {
+        if (!filled13 && !someoneWon) {
+            if (isPlayer1turn) {
                 ImageView circle = findViewById(R.id.circle13);
                 circle.animate().alpha(1).setDuration(300);
                 isPlayer1turn = false;

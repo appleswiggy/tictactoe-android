@@ -165,8 +165,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void playAgain(View view) {
         Log.i("info", "button pressed yess");
-        setDefault();
-
+        Button button = findViewById(R.id.button);
+        if (button.getAlpha() == 1) {
+            setDefault();
+        }
     }
 
     @SuppressLint("SetTextI18n")

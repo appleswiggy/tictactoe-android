@@ -9,45 +9,34 @@ import android.view.View;
 import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
-    public int destroy_f = 0;
+
+    private void changeActivity(String whichButton) {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        intent.putExtra("which_button_pressed", whichButton);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        Button mPlay = findViewById(R.id.btnplay);
-        //Button mHighScore = findViewById(R.id.btnhighscore);
-        //Button mOther;
 
-        try {
-            String message = getIntent().getStringExtra("cont_message");
-            if (message.equals("Continue")){
-                mPlay.setText(R.string.Continue);
-                destroy_f = 1;
-                Log.i("continue", "ifblock in");
-            }
-        }
-        catch (Exception e){
-            Log.i("continue","catchblock in");
-        }
-        mPlay.setOnClickListener(new View.OnClickListener() {
+        Button singlePlayerButton = findViewById(R.id.btnSinglePlayer);
+        Button multiPlayerButton = findViewById(R.id.btnMultiPlayer);
+
+        singlePlayerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Change activity
-                if (destroy_f == 1){
-                    //Continue feature
-                    MenuActivity.this.finish();
-                }
-                else {
-                    //App start
-                    Intent gameplayFull_intent = new Intent(MenuActivity.this, gameplayActivity.class);
-                    startActivity(gameplayFull_intent);
-                }
+                changeActivity("singlePlayerButtonPressed");
             }
         });
 
-        //More buttons
-
-        //Listeners
+        multiPlayerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeActivity("multiPlayerButtonPressed");
+            }
+        });
 
     }
 }

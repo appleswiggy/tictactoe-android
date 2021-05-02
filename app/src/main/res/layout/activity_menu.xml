@@ -21,18 +21,57 @@
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <Button
-        android:id="@+id/btnplay"
+        android:id="@+id/btnSinglePlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/play"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:fontFamily="monospace"
+        android:text="@string/singlePlayer"
         android:textSize="30sp"
         app:cornerRadius="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnMultiPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:text="@string/multiPlayer"
+        android:textSize="25sp"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSinglePlayer" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/app_name"
+        android:textColor="#673AB7"
+        android:textSize="70sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--    <Button-->
+    <!--        <Button-->
 <!--        android:id="@+id/btnother"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->

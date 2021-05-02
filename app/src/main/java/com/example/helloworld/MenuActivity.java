@@ -38,7 +38,7 @@ public class MenuActivity extends AppCompatActivity {
                     MenuActivity.this.finish();
                 }
                 else {
-                    //First time app start
+                    //App start
                     Intent gameplayFull_intent = new Intent(MenuActivity.this, gameplayActivityFull.class);
                     startActivity(gameplayFull_intent);
                 }

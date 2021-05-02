@@ -3,7 +3,7 @@
 ## To-Do
 * add the function to choose circle or cross.
 * add singleplayer and multiplayer functionality (its multiplayer for now)
-* fix play-again button (its always there and works but alpha is 0)
+* ~~fix play-again button (its always there and works but alpha is 0)~~
 * add computer-logic for singleplayer
 
 ## Screenshots

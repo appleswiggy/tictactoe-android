@@ -2,14 +2,14 @@
 
 ## To-Do
 * add the function to choose circle or cross.
-* add singleplayer and multiplayer functionality (its multiplayer for now)
+* ~~add singleplayer and multiplayer functionality (its multiplayer for now)~~
 * ~~fix play-again button (its always there and works but alpha is 0)~~
 * add computer-logic for singleplayer
 * add difficulty seekbar if singleplayer (easy, medium, hard)
   * easy - computer marks at random position
   * medium - one move random, one move strategic
   * hard - computer marks strategically
-* fix fullscreen issue
+* ~~fix fullscreen issue~~
 * add fragment instead of activity? idk yet
 
 ## Screenshots

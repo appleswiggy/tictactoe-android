@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">hello world</string>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="play">Play</string>
+    <string name="Continue">Continue</string>
+    <string name="HighScore">High Score</string>
+    <string name="Other">Other</string>
+    <string name="title_activity_gameplay_full">Tic-Tac-Toe</string>
+    <string name="back_button">Pause</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="playAgain">Play Again</string>
+    <string name="turnText">Turn</string>
 </resources>

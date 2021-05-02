@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameplayActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:background="@drawable/grid"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/circle11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/circle12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/circle13"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/circle21"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/circle22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/circle23"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/circle31"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/circle32"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/circle33"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/circle" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/cross11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:alpha="0"
+            android:onClick="click11"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cross12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0"
+            android:onClick="click12"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cross13"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="0"
+            android:onClick="click13"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cross21"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            android:onClick="click21"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cross22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            android:onClick="click22"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cross23"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            android:onClick="click23"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cross31"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            android:onClick="click31"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cross32"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            android:onClick="click32"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cross33"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            android:onClick="click33"
+            app:srcCompat="@drawable/cross" />
+    </androidx.gridlayout.widget.GridLayout>
+    <TextView
+        android:id="@+id/turnTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Turn:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:alpha="0"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

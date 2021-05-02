@@ -9,12 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".gameplayActivityFull"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_gameplay_full"
+            android:theme="@style/Theme.HelloWorld.Fullscreen"></activity>
+        <activity android:name=".MenuActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".gameplayActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

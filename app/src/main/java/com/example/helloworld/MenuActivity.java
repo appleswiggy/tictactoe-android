@@ -44,6 +44,7 @@ public class MenuActivity extends AppCompatActivity {
                 }
             }
         });
+
         //More buttons
 
         //Listeners

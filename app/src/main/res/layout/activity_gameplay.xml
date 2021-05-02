@@ -127,7 +127,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:alpha="0"
-            android:onClick="click11"
+            android:tag="11"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
 
         <ImageView
@@ -138,7 +139,8 @@
             android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
             android:alpha="0"
-            android:onClick="click12"
+            android:tag="12"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
 
         <ImageView
@@ -149,7 +151,8 @@
             android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
             android:alpha="0"
-            android:onClick="click13"
+            android:tag="13"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
 
         <ImageView
@@ -159,7 +162,8 @@
             android:layout_margin="10dp"
             android:layout_marginTop="15dp"
             android:alpha="0"
-            android:onClick="click21"
+            android:tag="21"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
 
         <ImageView
@@ -171,7 +175,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:alpha="0"
-            android:onClick="click22"
+            android:tag="22"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
 
         <ImageView
@@ -183,7 +188,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:alpha="0"
-            android:onClick="click23"
+            android:tag="23"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
 
         <ImageView
@@ -193,7 +199,8 @@
             android:layout_margin="10dp"
             android:layout_marginTop="15dp"
             android:alpha="0"
-            android:onClick="click31"
+            android:tag="31"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
 
         <ImageView
@@ -205,7 +212,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:alpha="0"
-            android:onClick="click32"
+            android:tag="32"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
 
         <ImageView
@@ -217,7 +225,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:alpha="0"
-            android:onClick="click33"
+            android:tag="33"
+            android:onClick="cellPressed"
             app:srcCompat="@drawable/cross" />
     </androidx.gridlayout.widget.GridLayout>
     <TextView

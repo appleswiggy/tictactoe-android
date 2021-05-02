@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuActivity"
-    android:background="@drawable/menu_background_image">
+    android:background="#fff">
 
 
 <!--    <TextView-->
@@ -25,8 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/play"
-        android:textSize="50sp"
-        app:cornerRadius="20dp"
+        android:textSize="30sp"
+        app:cornerRadius="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

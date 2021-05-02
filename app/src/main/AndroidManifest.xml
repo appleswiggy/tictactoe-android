@@ -13,7 +13,7 @@
             android:name=".gameplayActivityFull"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_gameplay_full"
-            android:theme="@style/Theme.HelloWorld.Fullscreen"></activity>
+            android:theme="@style/Theme.HelloWorld.Fullscreen" />
         <activity android:name=".MenuActivity"
             android:launchMode="singleTop">
             <intent-filter>

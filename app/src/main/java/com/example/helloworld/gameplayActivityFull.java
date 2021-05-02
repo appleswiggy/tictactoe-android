@@ -100,6 +100,7 @@ public class gameplayActivityFull extends AppCompatActivity {
             return false;
         }
     };
+
     boolean isPlayer1turn, someoneWon;
 
     boolean[] filledStatus = {false, false, false,  // filled11, filled12, filled13

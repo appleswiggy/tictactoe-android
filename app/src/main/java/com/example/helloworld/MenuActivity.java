@@ -39,11 +39,12 @@ public class MenuActivity extends AppCompatActivity {
                 }
                 else {
                     //App start
-                    Intent gameplayFull_intent = new Intent(MenuActivity.this, gameplayActivityFull.class);
+                    Intent gameplayFull_intent = new Intent(MenuActivity.this, gameplayActivity.class);
                     startActivity(gameplayFull_intent);
                 }
             }
         });
+
         //More buttons
 
         //Listeners

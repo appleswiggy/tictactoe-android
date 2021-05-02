@@ -201,6 +201,7 @@ public class gameplayActivityFull extends AppCompatActivity {
             setDefault();
         }
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -235,6 +236,7 @@ public class gameplayActivityFull extends AppCompatActivity {
             }
         });
     }
+
 
     @SuppressLint("SetTextI18n")
     public void cellPressed(View view) {

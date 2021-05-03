@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +20,13 @@ public class gameplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gameplay);
+
+        String settingsData = getIntent().getStringExtra("settings_data");
+        if (settingsData.equals("some single player settings data")) {
+            Toast.makeText(this, "It started from single player fragment", Toast.LENGTH_LONG).show();
+        } else if (settingsData.equals("some multi player settings data")) {
+            Toast.makeText(this, "It started from multi player fragment", Toast.LENGTH_LONG).show();
+        }
 
         setDefault();
     }

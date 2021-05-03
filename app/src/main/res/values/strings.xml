@@ -8,6 +8,11 @@
     <string name="chooseCircleOrCross">Choose Circle or Cross?</string>
     <string name="chooseDifficulty">Choose Difficulty level</string>
     <string name="difficultyLevel">Difficulty:          </string>
+    <string name="crossPlayer">Cross Player Name</string>
+    <string name="playerOne">Player 1</string>
+    <string name="playerTwo">Player 2</string>
+    <string name="whoseTurnFirst">Whose turn is first?</string>
+    <string name="circlePlayer">Circle Player Name</string>
     <string name="circle">Circle</string>
     <string name="cross">Cross</string>
     <string name="HighScore">High Score</string>

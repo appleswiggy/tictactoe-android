@@ -13,6 +13,9 @@
 * ~~add fragment instead of activity? idk yet~~
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/66782780/116790668-35101580-aad3-11eb-8f8a-7659f362b50d.png)
-![image](https://user-images.githubusercontent.com/66782780/116790687-5244e400-aad3-11eb-9c81-ae6efbb8a2c1.png)
-![image](https://user-images.githubusercontent.com/66782780/116790703-64bf1d80-aad3-11eb-870e-3b5a0d139f4d.png)
+![image](https://user-images.githubusercontent.com/66782780/116901931-2606a000-ac58-11eb-8bc8-aef6e75f8b58.png)
+![image](https://user-images.githubusercontent.com/66782780/116902120-61a16a00-ac58-11eb-80b2-78673962233d.png)
+![image](https://user-images.githubusercontent.com/66782780/116902197-7978ee00-ac58-11eb-928d-d36d94b9b560.png)
+![image](https://user-images.githubusercontent.com/66782780/116902251-8990cd80-ac58-11eb-8d21-e0564d63d7d4.png)
+![image](https://user-images.githubusercontent.com/66782780/116902323-9ca39d80-ac58-11eb-952a-41a1202e58b2.png)
+

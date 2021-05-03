@@ -68,7 +68,7 @@ public class SinglePlayerSettingsFragment extends Fragment {
                 RadioButton radioButton;
                 int radioId = radioGroup.getCheckedRadioButtonId();
                 radioButton = v.findViewById(radioId);
-                settingsData = "s." + radioButton.getText().toString() + "." + status;
+                settingsData = "s@" + radioButton.getText().toString() + "@" + status;
 
 
                 Intent intent = new Intent(getContext(), gameplayActivity.class);

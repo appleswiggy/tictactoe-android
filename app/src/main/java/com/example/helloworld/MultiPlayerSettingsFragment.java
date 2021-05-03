@@ -38,8 +38,8 @@ public class MultiPlayerSettingsFragment extends Fragment {
                 String radio = radioButton2.getText().toString();
 
 
-                settingsData = "m." + circlePlayerName.getText().toString() + "." +
-                                crossPlayerName.getText().toString() + "." + radio;
+                settingsData = "m@" + circlePlayerName.getText().toString() + "@" +
+                                crossPlayerName.getText().toString() + "@" + radio;
 
                 Intent intent = new Intent(getContext(), gameplayActivity.class);
                 intent.putExtra("settings_data", settingsData);

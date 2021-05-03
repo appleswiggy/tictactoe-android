@@ -14,21 +14,21 @@ import android.widget.TextView;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    public void startGameplayActivity(String data) {
-        Intent intent = new Intent(this, gameplayActivity.class);
-        intent.putExtra("settings_data", data);
-        startActivity(intent);
-    }
-
-    public void startButtonSinglePlayer(View view) {
-        String settingsData = "some single player settings data";
-        startGameplayActivity(settingsData);
-    }
-
-    public void startButtonMultiPlayer(View view) {
-        String settingsData = "some multi player settings data";
-        startGameplayActivity(settingsData);
-    }
+//    public void startGameplayActivity(String data) {
+//        Intent intent = new Intent(this, gameplayActivity.class);
+//        intent.putExtra("settings_data", data);
+//        startActivity(intent);
+//    }
+//
+//    public void startButtonSinglePlayer(View view) {
+//        String settingsData = "some single player settings data";
+//        startGameplayActivity(settingsData);
+//    }
+//
+//    public void startButtonMultiPlayer(View view) {
+//        String settingsData = "some multi player settings data";
+//        startGameplayActivity(settingsData);
+//    }
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -44,9 +44,9 @@ public class SettingsActivity extends AppCompatActivity {
 //            whichSettingsToShow.setText("Show multi player settings here");
 //        }
 
-        Button startButton;
-
-        Fragment fragment;
+//        Button startButton;
+//
+       Fragment fragment;
         String whichButtonPressed = getIntent().getStringExtra("which_button_pressed");
         if (whichButtonPressed.equals("singlePlayerButtonPressed")) {
 

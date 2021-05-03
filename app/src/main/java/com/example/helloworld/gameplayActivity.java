@@ -22,11 +22,8 @@ public class gameplayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gameplay);
 
         String settingsData = getIntent().getStringExtra("settings_data");
-        if (settingsData.equals("some single player settings data")) {
-            Toast.makeText(this, "It started from single player fragment", Toast.LENGTH_LONG).show();
-        } else if (settingsData.equals("some multi player settings data")) {
-            Toast.makeText(this, "It started from multi player fragment", Toast.LENGTH_LONG).show();
-        }
+
+        Toast.makeText(this, settingsData, Toast.LENGTH_LONG).show();
 
         setDefault();
     }

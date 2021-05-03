@@ -37,7 +37,6 @@
             android:layout_marginTop="457dp"
             android:layout_marginEnd="153dp"
             android:layout_marginRight="153dp"
-            android:onClick="startButtonMultiPlayer"
             android:text="Start"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

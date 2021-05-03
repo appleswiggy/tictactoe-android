@@ -4,7 +4,12 @@
     <string name="multiPlayerSettings">Multi Player Settings</string>
     <string name="singlePlayer">Single Player</string>
     <string name="multiPlayer">Multi Player</string>
-    <string name="Continue">Continue</string>
+    <string name="start">Start</string>
+    <string name="chooseCircleOrCross">Choose Circle or Cross?</string>
+    <string name="chooseDifficulty">Choose Difficulty level</string>
+    <string name="difficultyLevel">Difficulty:          </string>
+    <string name="circle">Circle</string>
+    <string name="cross">Cross</string>
     <string name="HighScore">High Score</string>
     <string name="Other">Other</string>
     <string name="title_activity_gameplay_full">Tic-Tac-Toe</string>
